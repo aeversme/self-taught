@@ -1,4 +1,3 @@
-import pytest
 from ..card_handler import Card
 
 

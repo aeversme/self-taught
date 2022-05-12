@@ -9,6 +9,7 @@ class Card:
         """
         self.suit = s
         self.value = v
+        self.name = self.values[self.value] + " of " + self.suits[self.suit]
 
     def __lt__(self, other):
         if self.value < other.value:
@@ -29,11 +30,4 @@ class Card:
         return False
 
     def __repr__(self):
-        return self.values[self.value] + " of " + self.suits[self.suit]
-
-
-card1 = Card(2, 10)
-card2 = Card(3, 10)
-card3 = Card(0, 13)
-print(card1 > card2)
-print(card3 > card2)
+        return self.name
