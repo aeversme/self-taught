@@ -7,6 +7,7 @@ number_list = [8, 4, 9, 6, 5, 1, 3, 7, 2]
 bigger_list = [randint(0, 100000) for _ in range(10000)]
 
 
+# written from scratch, before looking at the book solution
 def bubble_sort(a_list):
     swap_count = -1
     while swap_count != 0:
@@ -18,11 +19,13 @@ def bubble_sort(a_list):
     return a_list
 
 
+# book solution
 def bubble_sort_book(a_list):
     list_length = len(a_list) - 1
     for i in range(list_length):
         no_swaps = True
-        for j in range(list_length):
+        # subtracting i in the second loop's range improves sort efficiency
+        for j in range(list_length - i):
             if a_list[j] > a_list[j + 1]:
                 a_list[j], a_list[j + 1] = a_list[j + 1], a_list[j]
                 no_swaps = False
@@ -45,3 +48,7 @@ def compare_sorts(input_list):
 
 
 compare_sorts(bigger_list)
+
+"""
+First sort method averages ~7.5 seconds. Second method averages ~4.5 seconds.
+"""
