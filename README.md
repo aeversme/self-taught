@@ -10,3 +10,6 @@ Self-Taught Computer Scientist_.
 Code written in `self-taught-programmer` focuses primarily on Object-Oriented Programming, including a class-based 
 version of the card game 'War.' There are also a few rudimentary data structures (LIFO stack, FIFO queue) in the `CS` 
 subfolder.
+
+Code written in `self-taugh-computer-scientist` dives deeper into algorithms and data structures:
+* Sorting: bubble, insertion, merge, quicksort
