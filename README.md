@@ -15,3 +15,4 @@ Code written in `self-taugh-computer-scientist` dives deeper into algorithms and
 * Sorting: bubble, insertion, merge, quicksort
 * String and math algorithms
 * Arrays, lists, and linked lists
+* Stacks
