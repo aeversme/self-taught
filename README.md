@@ -13,3 +13,5 @@ subfolder.
 
 Code written in `self-taugh-computer-scientist` dives deeper into algorithms and data structures:
 * Sorting: bubble, insertion, merge, quicksort
+* String and math algorithms
+* Arrays, lists, and linked lists
